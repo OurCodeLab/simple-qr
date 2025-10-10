@@ -156,8 +156,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you encounter any issues or have questions:
 - Create an issue on GitHub
-- Contact us at support@example.com
+- Contact us at hello@ourcodelab.com
 
 ---
 
-Made with ❤️ for the community. No tracking, no ads, just pure functionality.
+Made with ❤️ for the community. No tracking, no ads, just pure functionality. With the aid of ChatGPT for documentation generation.

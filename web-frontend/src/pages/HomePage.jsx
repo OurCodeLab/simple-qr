@@ -273,11 +273,11 @@ export default function HomePage() {
                 </h2>
                 <div className="text-6xl mb-6">🤯</div>
               </div>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <Motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                   className="backdrop-blur-md bg-white/70 dark:bg-gray-800/70 border border-white/20 dark:border-gray-700/50 rounded-xl shadow-xl shadow-black/10 dark:shadow-black/30 p-8"
@@ -287,7 +287,7 @@ export default function HomePage() {
                   </h3>
                   <div>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
-                      I needed to create a simple QR code for a project. Sounds easy, right? Wrong! 
+                      I needed to create a simple QR code for a project. Sounds easy, right? Wrong!
                     </p>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
                       Every single website I found online had the same frustrating pattern:
@@ -328,8 +328,8 @@ export default function HomePage() {
                 </Motion.div>
 
                 <Motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                   viewport={{ once: true }}
                   className="backdrop-blur-md bg-white/70 dark:bg-gray-800/70 border border-white/20 dark:border-gray-700/50 rounded-xl shadow-xl shadow-black/10 dark:shadow-black/30 p-8"
@@ -395,7 +395,7 @@ export default function HomePage() {
                     Built with ❤️ for the Community
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                    This tool is completely free because I believe basic utilities like QR code generation should be accessible to everyone. 
+                    This tool is completely free because I believe basic utilities like QR code generation should be accessible to everyone.
                   </p>
                 </div>
               </Motion.div>

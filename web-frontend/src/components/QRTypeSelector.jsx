@@ -8,6 +8,7 @@ import WiFiForm from './forms/WiFiForm'
 import VCardForm from './forms/VCardForm'
 import CalendarForm from './forms/CalendarForm'
 import SocialForm from './forms/SocialForm'
+import PayNowForm from './forms/PayNowForm'
 import FileForm from './forms/FileForm'
 
 export default function QRTypeSelector({ types, selectedType, onTypeSelect, onDataChange, onFormDataChange }) {
@@ -51,6 +52,8 @@ export default function QRTypeSelector({ types, selectedType, onTypeSelect, onDa
         return <CalendarForm {...commonProps} />
       case 'social':
         return <SocialForm {...commonProps} />
+      case 'paynow':
+        return <PayNowForm {...commonProps} />
       case 'file':
         return <FileForm {...commonProps} />
       default:

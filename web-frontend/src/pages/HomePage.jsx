@@ -18,6 +18,7 @@ const qrTypes = [
   { id: 'vcard', name: 'Contact Card', icon: '👤' },
   { id: 'calendar', name: 'Calendar Event', icon: '📅' },
   { id: 'social', name: 'Social Media', icon: '📲' },
+  { id: 'paynow', name: 'PayNow (SG)', icon: '💰' },
   { id: 'file', name: 'File/Image', icon: '📎' },
 ]
 

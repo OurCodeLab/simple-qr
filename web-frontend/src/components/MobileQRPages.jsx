@@ -27,6 +27,7 @@ export function QRTypeSelectionPage({ type, onTypeSelect, onDataChange, onFormDa
           { id: 'vcard', name: 'Contact', icon: '👤' },
           { id: 'calendar', name: 'Event', icon: '📅' },
           { id: 'social', name: 'Social', icon: '📲' },
+          { id: 'paynow', name: 'PayNow (SG)', icon: '💰' },
           { id: 'file', name: 'File', icon: '📎' },
         ]}
         selectedType={type}

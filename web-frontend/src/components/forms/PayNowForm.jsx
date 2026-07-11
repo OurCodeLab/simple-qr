@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PayNowForm({ data, onChange }) {
   const generatePayNowQRString = (payNowData) => {
-    const { payeeType, payeeId, amount, reference } = payNowData
+    const { payeeType, payeeId, amount, reference, referenceCode } = payNowData
     
     if (!payeeId) return ''
 
@@ -49,10 +49,16 @@ export default function PayNowForm({ data, onChange }) {
     // Merchant City
     qrString += '6009SINGAPORE'
 
-    // Additional Data Field (for reference)
+    // Additional Data Field (for reference and reference code)
+    let additionalDataField = ''
     if (reference) {
-      const refField = '01' + String(reference.length).padStart(2, '0') + reference
-      qrString += '62' + String(refField.length).padStart(2, '0') + refField
+      additionalDataField += '01' + String(reference.length).padStart(2, '0') + reference
+    }
+    if (referenceCode) {
+      additionalDataField += '02' + String(referenceCode.length).padStart(2, '0') + referenceCode
+    }
+    if (additionalDataField) {
+      qrString += '62' + String(additionalDataField.length).padStart(2, '0') + additionalDataField
     }
 
     // Add CRC placeholder
@@ -195,6 +201,24 @@ export default function PayNowForm({ data, onChange }) {
         />
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
           Leave empty for recipient to enter amount
+        </p>
+      </div>
+
+      {/* Reference Code */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+          Reference Code (Optional)
+        </label>
+        <input
+          type="text"
+          maxLength="25"
+          value={data.referenceCode || ''}
+          onChange={(e) => handleChange('referenceCode', e.target.value)}
+          placeholder="Reference code"
+          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        />
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          Optional reference code to include in the QR payload
         </p>
       </div>
 

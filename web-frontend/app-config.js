@@ -49,6 +49,10 @@ const config = {
       github: "https://github.com/OurCodeLab/simple-qr",
       instagram: "https://instagram.com/ourcodelab",
     }
+  },
+
+  buckets: {
+    production: "simpleqr-production-website"
   }
 }
 

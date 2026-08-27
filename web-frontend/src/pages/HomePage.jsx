@@ -239,33 +239,33 @@ export default function HomePage() {
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-800 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
                   <tr>
                     <td className="p-4 font-medium">Pricing & Subscriptions</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">100% Free Forever ($0)</td>
-                    <td className="p-4 text-red-500">$9 - $49 / month subscription</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">100% Free Forever ($0)</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">$9 - $49 / month subscription</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Account & Credit Card</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">No Sign-up Needed</td>
-                    <td className="p-4 text-red-500">Mandatory Registration & Credit Card</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">No Sign-up Needed</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">Mandatory Registration & Credit Card</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Data Privacy & Security</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">100% In-Browser (Local)</td>
-                    <td className="p-4 text-red-500">Server tracking & analytics logging</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">100% In-Browser (Local)</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">Server tracking & analytics logging</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Custom Logo Overlay</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">Included Free</td>
-                    <td className="p-4 text-red-500">Locked behind Pro tier</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">Included Free</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">Locked behind Pro tier</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">High-Res Export (SVG / PNG / PDF)</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">Unlimited Vector Downloads</td>
-                    <td className="p-4 text-red-500">Watermarked or low resolution</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">Unlimited Vector Downloads</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">Watermarked or low resolution</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Scan Limits & Expiration</td>
-                    <td className="p-4 font-bold text-green-600 dark:text-green-400">Unlimited Scans, Never Expires</td>
-                    <td className="p-4 text-red-500">Capped scan limits, codes expire</td>
+                    <td className="p-4 font-bold text-green-700 dark:text-green-400">Unlimited Scans, Never Expires</td>
+                    <td className="p-4 font-medium text-red-700 dark:text-red-400">Capped scan limits, codes expire</td>
                   </tr>
                 </tbody>
               </table>

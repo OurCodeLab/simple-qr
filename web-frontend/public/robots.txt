@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://simpleqr.ourcodelab.com/sitemap.xml
-llms: https://simpleqr.ourcodelab.com/llms.txt

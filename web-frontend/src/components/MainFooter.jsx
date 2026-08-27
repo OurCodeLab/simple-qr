@@ -26,7 +26,7 @@ export default function MainFooter () {
                             </div>
                         </div>
                         <p className="text-sm text-gray-300 mb-4">
-                            A free and open-source QR code generator built by <a href="https://www.linkedin.com/in/aamuelchua/" className="text-blue-400 hover:underline">@aamuelchua</a> and powered by <a href={config.company.contact.website} className="text-blue-400 hover:underline">{config.company.name}</a>. No ads, no sign ups, no more paying for a service that is literally free.
+                            A free and open-source QR code generator built by <a href="https://www.linkedin.com/in/aamuelchua/" className="text-blue-400 underline font-medium hover:text-blue-300">@aamuelchua</a> and powered by <a href={config.company.contact.website} className="text-blue-400 underline font-medium hover:text-blue-300">{config.company.name}</a>. No ads, no sign ups, no more paying for a service that is literally free.
                         </p>
                         <p className="text-xs text-gray-300 font-medium">
                             Privacy-focused • No data collection • Open source
@@ -111,7 +111,7 @@ export default function MainFooter () {
                             <div>© {new Date().getFullYear()} Simple QR. Literally free with no ads and no sign up</div>
                         </div>
                         <div className="mt-2 md:mt-0 text-center md:text-right">
-                            <span className="text-xs">Powered by <a href={config.company.contact.website} className="text-blue-400 hover:underline">{config.company.name}</a></span>
+                            <span className="text-xs">Powered by <a href={config.company.contact.website} className="text-blue-400 underline font-medium hover:text-blue-300">{config.company.name}</a></span>
                         </div>
                     </div>
                 </div>

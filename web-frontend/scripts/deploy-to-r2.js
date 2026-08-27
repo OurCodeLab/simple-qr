@@ -59,10 +59,24 @@ function walk(dir) {
   return files
 }
 
+function getCacheControl(key) {
+  if (key.startsWith('assets/')) {
+    return 'public, max-age=31536000, immutable'
+  }
+  return 'no-cache, no-store, must-revalidate'
+}
+
 function runWranglerPut(bucket, key, filePath, contentType) {
   return new Promise((resolve, reject) => {
     const objectPath = `${bucket}/${key}`
-    const args = ['wrangler', 'r2', 'object', 'put', objectPath, '--file', filePath, '--content-type', contentType, '--remote']
+    const cacheControl = getCacheControl(key)
+    const args = [
+      'wrangler', 'r2', 'object', 'put', objectPath,
+      '--file', filePath,
+      '--content-type', contentType,
+      '--cache-control', cacheControl,
+      '--remote'
+    ]
     const proc = spawn('npx', args, { stdio: ['ignore', 'pipe', 'pipe'] })
 
     let out = ''

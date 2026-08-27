@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { MdCloudUpload } from 'react-icons/md'
 import colors from '../data/colors'
 
 export default function QRCustomizer({ options, onOptionsChange }) {
@@ -71,9 +72,9 @@ export default function QRCustomizer({ options, onOptionsChange }) {
 
     return (
         <div className="backdrop-blur-md bg-white/80 dark:bg-gray-800/80 border border-white/20 dark:border-gray-700/50 rounded-xl shadow-xl shadow-black/10 dark:shadow-black/30 p-6">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
                 Customize QR Code
-            </h3>
+            </h2>
 
             <div className="space-y-6">
                 {/* Size */}
@@ -213,8 +214,8 @@ export default function QRCustomizer({ options, onOptionsChange }) {
                                 />
                                 
                                 <div className="mb-2">
-                                    <div className={`text-2xl mb-1 transition-transform duration-200 ${isLogoDragging ? 'scale-110' : ''}`}>
-                                        🖼️
+                                    <div className="mb-1 flex justify-center">
+                                        <MdCloudUpload className={`w-8 h-8 text-blue-500 transition-transform duration-200 ${isLogoDragging ? 'scale-110' : ''}`} />
                                     </div>
                                     <p className={`text-sm font-medium mb-2 transition-colors duration-200 ${
                                         isLogoDragging 

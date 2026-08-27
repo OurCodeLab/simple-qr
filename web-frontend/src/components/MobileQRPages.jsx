@@ -2,6 +2,20 @@ import React from 'react'
 import QRCodeGenerator from './QRCodeGenerator'
 import QRTypeSelector from './QRTypeSelector'
 import colors from '../data/colors'
+import {
+  MdArticle,
+  MdLink,
+  MdEmail,
+  MdPhone,
+  MdSms,
+  MdWifi,
+  MdPerson,
+  MdEvent,
+  MdShare,
+  MdAttachMoney,
+  MdAttachFile,
+  MdQrCode2
+} from 'react-icons/md'
 
 // Step 1: QR Type Selection
 export function QRTypeSelectionPage({ type, onTypeSelect, onDataChange, onFormDataChange }) {
@@ -18,17 +32,17 @@ export function QRTypeSelectionPage({ type, onTypeSelect, onDataChange, onFormDa
       
       <QRTypeSelector
         types={[
-          { id: 'text', name: 'Text', icon: '📝' },
-          { id: 'url', name: 'URL', icon: '🔗' },
-          { id: 'email', name: 'Email', icon: '📧' },
-          { id: 'phone', name: 'Phone', icon: '📱' },
-          { id: 'sms', name: 'SMS', icon: '💬' },
-          { id: 'wifi', name: 'WiFi', icon: '📶' },
-          { id: 'vcard', name: 'Contact', icon: '👤' },
-          { id: 'calendar', name: 'Event', icon: '📅' },
-          { id: 'social', name: 'Social', icon: '📲' },
-          { id: 'paynow', name: 'PayNow (SG)', icon: '💰' },
-          { id: 'file', name: 'File', icon: '📎' },
+          { id: 'text', name: 'Text', icon: <MdArticle className="w-5 h-5 text-blue-500" /> },
+          { id: 'url', name: 'URL', icon: <MdLink className="w-5 h-5 text-indigo-500" /> },
+          { id: 'email', name: 'Email', icon: <MdEmail className="w-5 h-5 text-red-500" /> },
+          { id: 'phone', name: 'Phone', icon: <MdPhone className="w-5 h-5 text-green-500" /> },
+          { id: 'sms', name: 'SMS', icon: <MdSms className="w-5 h-5 text-purple-500" /> },
+          { id: 'wifi', name: 'WiFi', icon: <MdWifi className="w-5 h-5 text-orange-500" /> },
+          { id: 'vcard', name: 'Contact', icon: <MdPerson className="w-5 h-5 text-teal-500" /> },
+          { id: 'calendar', name: 'Event', icon: <MdEvent className="w-5 h-5 text-pink-500" /> },
+          { id: 'social', name: 'Social', icon: <MdShare className="w-5 h-5 text-cyan-500" /> },
+          { id: 'paynow', name: 'PayNow (SG)', icon: <MdAttachMoney className="w-5 h-5 text-emerald-500" /> },
+          { id: 'file', name: 'File', icon: <MdAttachFile className="w-5 h-5 text-amber-500" /> },
         ]}
         selectedType={type}
         onTypeSelect={onTypeSelect}
@@ -174,7 +188,7 @@ export function QRGeneratorPage({ data, options, type, formData }) {
         </div>
       ) : (
         <div className="text-center py-8">
-          <div className="text-6xl mb-4">📱</div>
+          <MdQrCode2 className="h-16 w-16 text-blue-500 mx-auto mb-4" />
           <p className="text-gray-500 dark:text-gray-400 mb-2">
             No QR code data yet
           </p>

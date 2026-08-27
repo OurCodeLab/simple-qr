@@ -63,9 +63,9 @@ export default function QRTypeSelector({ types, selectedType, onTypeSelect, onDa
 
   return (
     <div className="backdrop-blur-md bg-white/80 dark:bg-gray-800/80 border border-white/20 dark:border-gray-700/50 rounded-xl shadow-xl shadow-black/10 dark:shadow-black/30 p-6">
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
         Select QR Code Type
-      </h3>
+      </h2>
       
       {/* Type Selection Grid */}
       <div className="grid grid-cols-2 gap-3 mb-6">
@@ -91,9 +91,9 @@ export default function QRTypeSelector({ types, selectedType, onTypeSelect, onDa
 
       {/* Dynamic Form */}
       <div className="border-t border-gray-200 dark:border-gray-600 pt-6">
-        <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
+        <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
           Enter Details
-        </h4>
+        </h3>
         {renderForm()}
       </div>
     </div>

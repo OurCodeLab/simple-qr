@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { MdCloudUpload } from 'react-icons/md'
 
 export default function FileForm({ data, onChange }) {
   const fileInputRef = useRef(null)
@@ -123,8 +124,8 @@ export default function FileForm({ data, onChange }) {
               />
               
               <div className="mb-4">
-                <div className={`text-4xl mb-2 transition-transform duration-200 ${isDragging ? 'scale-110' : ''}`}>
-                  📁
+                <div className="mb-2 flex justify-center">
+                  <MdCloudUpload className={`w-12 h-12 text-blue-500 transition-transform duration-200 ${isDragging ? 'scale-110' : ''}`} />
                 </div>
                 <p className={`text-lg font-medium mb-2 transition-colors duration-200 ${
                   isDragging 

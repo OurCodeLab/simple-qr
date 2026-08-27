@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdLightbulb } from 'react-icons/md'
 
 export default function PayNowForm({ data, onChange }) {
   const generatePayNowQRString = (payNowData) => {
@@ -242,8 +243,9 @@ export default function PayNowForm({ data, onChange }) {
 
       {!data.payeeType && (
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-          <p className="text-sm text-blue-800 dark:text-blue-200">
-            💡 Select payee type to start creating your PayNow QR code
+          <p className="text-sm text-blue-800 dark:text-blue-200 flex items-center gap-1.5">
+            <MdLightbulb className="w-4 h-4 text-amber-500 flex-shrink-0" />
+            <span>Select payee type to start creating your PayNow QR code</span>
           </p>
         </div>
       )}

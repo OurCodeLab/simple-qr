@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import QRCode from 'qrcode'
 import { saveAs } from 'file-saver'
+import { MdQrCode2, MdAutoAwesome } from 'react-icons/md'
 import config from '../../app-config'
 
 export default function QRCodeGenerator({ data, options, type, formData = {} }) {
@@ -172,9 +173,9 @@ export default function QRCodeGenerator({ data, options, type, formData = {} }) 
 
   return (
     <div className="backdrop-blur-md bg-white/80 dark:bg-gray-800/80 border border-white/20 dark:border-gray-700/50 rounded-xl shadow-xl shadow-black/10 dark:shadow-black/30 p-6 sticky top-20">
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
         Your QR Code
-      </h3>
+      </h2>
       
       {/* QR Code Display or Animation */}
       <div className="flex justify-center mb-6">
@@ -225,8 +226,8 @@ export default function QRCodeGenerator({ data, options, type, formData = {} }) 
                 </div>
                 
                 {/* QR Code icon */}
-                <div className="text-8xl text-gray-400 dark:text-gray-500 animate-pulse">
-                  📱
+                <div className="flex items-center justify-center p-4">
+                  <MdQrCode2 className="w-20 h-20 text-gray-400 dark:text-gray-500 animate-pulse" />
                 </div>
                 
                 {/* Corner squares (QR code style) */}
@@ -240,8 +241,8 @@ export default function QRCodeGenerator({ data, options, type, formData = {} }) 
               <p className="text-lg font-medium text-gray-600 dark:text-gray-300 animate-fade-in">
                 Ready to Generate
               </p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                Enter your data and watch the magic happen ✨
+              <p className="text-sm text-gray-500 dark:text-gray-400 animate-fade-in flex items-center justify-center gap-1" style={{ animationDelay: '0.2s' }}>
+                Enter your data and watch the magic happen <MdAutoAwesome className="w-4 h-4 text-amber-500" />
               </p>
               
               {/* Animated dots */}

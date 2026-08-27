@@ -21,25 +21,25 @@ export default function MainFooter () {
                                 <MdQrCode2 className="h-6 w-6 text-white" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-xl text-white uppercase tracking-wider">Simple QR</h3>
-                                <p className="text-sm text-gray-400">Get your QR codes in seconds</p>
+                                <h2 className="font-bold text-xl text-white uppercase tracking-wider">Simple QR</h2>
+                                <p className="text-sm text-gray-300">Get your QR codes in seconds</p>
                             </div>
                         </div>
-                        <p className="text-sm text-gray-400 mb-4">
-                            A free and open-source QR code generator built by <a href="https://www.linkedin.com/in/aamuelchua/">@aamuelchua</a> and powered by <a href={config.company.contact.website}>{config.company.name}</a>. No ads, no sign ups, no more paying for a service that is literally free.
+                        <p className="text-sm text-gray-300 mb-4">
+                            A free and open-source QR code generator built by <a href="https://www.linkedin.com/in/aamuelchua/" className="text-blue-400 hover:underline">@aamuelchua</a> and powered by <a href={config.company.contact.website} className="text-blue-400 hover:underline">{config.company.name}</a>. No ads, no sign ups, no more paying for a service that is literally free.
                         </p>
-                        <p className="text-xs text-gray-500">
+                        <p className="text-xs text-gray-300 font-medium">
                             Privacy-focused • No data collection • Open source
                         </p>
                     </div>
 
                     {/* Features */}
                     <div>
-                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                            <MdInfo className="h-4 w-4" />
+                        <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
+                            <MdInfo className="h-4 w-4 text-blue-400" />
                             Features
-                        </h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
+                        </h3>
+                        <ul className="space-y-2 text-sm text-gray-300">
                             <li>• Multiple QR code types</li>
                             <li>• Custom colors & logos</li>
                             <li>• High resolution export</li>
@@ -51,15 +51,15 @@ export default function MainFooter () {
 
                     {/* Support */}
                     <div>
-                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                            <MdHelp className="h-4 w-4" />
+                        <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
+                            <MdHelp className="h-4 w-4 text-blue-400" />
                             Support
-                        </h4>
+                        </h3>
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <button 
                                     onClick={() => scrollToSection('features')} 
-                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    className="text-gray-300 hover:text-blue-400 transition-colors"
                                 >
                                     Features
                                 </button>
@@ -67,7 +67,7 @@ export default function MainFooter () {
                             <li>
                                 <button 
                                     onClick={() => scrollToSection('about')} 
-                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    className="text-gray-300 hover:text-blue-400 transition-colors"
                                 >
                                     About
                                 </button>
@@ -75,7 +75,7 @@ export default function MainFooter () {
                             <li>
                                 <a 
                                     href={config.company.social.github} 
-                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    className="text-gray-300 hover:text-blue-400 transition-colors"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -85,7 +85,7 @@ export default function MainFooter () {
                             <li>
                                 <a 
                                     href={`mailto:${config.company.contact.email}`} 
-                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    className="text-gray-300 hover:text-blue-400 transition-colors"
                                 >
                                     Contact us
                                 </a>
@@ -93,7 +93,7 @@ export default function MainFooter () {
                             <li>
                                 <a 
                                     href={`${config.company.contact.website}`}
-                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    className="text-gray-300 hover:text-blue-400 transition-colors"
                                 >
                                     About OurCodeLab
                                 </a>
@@ -106,12 +106,12 @@ export default function MainFooter () {
             {/* Copyright */}
             <div className="border-t border-gray-800">
                 <div className="container mx-auto px-4 py-4">
-                    <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+                    <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
                         <div className="text-center md:text-left">
                             <div>© {new Date().getFullYear()} Simple QR. Literally free with no ads and no sign up</div>
                         </div>
                         <div className="mt-2 md:mt-0 text-center md:text-right">
-                            <span className="text-xs">Powered by <a href={config.company.contact.website}>{config.company.name}</a></span>
+                            <span className="text-xs">Powered by <a href={config.company.contact.website} className="text-blue-400 hover:underline">{config.company.name}</a></span>
                         </div>
                     </div>
                 </div>
